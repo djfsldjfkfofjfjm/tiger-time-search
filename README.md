@@ -44,7 +44,19 @@ tiger-time-search/
 └── vercel.json           # Настройки Vercel
 ```
 
-## 🔍 API Endpoint
+## 🔍 API Endpoints
+
+### POST /api/assistant
+Работа с OpenAI Assistant - полноценный чат-бот.
+
+**Параметры:**
+```json
+{
+  "message": "Текст сообщения",
+  "assistant_id": "asst_xxxxx",  // ID вашего Assistant
+  "thread_id": "thread_xxx"      // Опционально
+}
+```
 
 ### POST /api/search
 
