@@ -1,0 +1,40 @@
+{
+  "name": "search_tiger_watches",
+  "description": "Поиск часов Rolex в каталоге Tiger Time. Используй эту функцию когда клиент спрашивает про часы, модели, цены или характеристики.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string",
+        "description": "Поисковый запрос: название модели (Daytona, Datejust, Day-Date, Submariner, GMT-Master, Yacht-Master, Explorer, Milgauss, Air-King, Cellini) или другие ключевые слова"
+      },
+      "max_price": {
+        "type": "number",
+        "description": "Максимальная цена в рублях (например: 150000)"
+      },
+      "min_price": {
+        "type": "number",
+        "description": "Минимальная цена в рублях"
+      },
+      "gender": {
+        "type": "string",
+        "enum": ["Мужские", "Женские", "Унисекс"],
+        "description": "Пол (Мужские, Женские или Унисекс)"
+      },
+      "color": {
+        "type": "string",
+        "description": "Цвет часов (Золотой, Серебристый, Черный, Синий, Зеленый и т.д.)"
+      },
+      "strap": {
+        "type": "string",
+        "description": "Тип ремешка (Стальной, Кожаный, Каучук)"
+      },
+      "limit": {
+        "type": "number",
+        "description": "Количество результатов для показа (по умолчанию 5, максимум 10)",
+        "default": 5
+      }
+    },
+    "required": []
+  }
+}

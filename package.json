@@ -1,0 +1,19 @@
+{
+  "name": "tiger-time-search-api",
+  "version": "1.0.0",
+  "description": "API для поиска часов Rolex в каталоге Tiger Time",
+  "main": "api/search.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod",
+    "test": "node test-search.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
